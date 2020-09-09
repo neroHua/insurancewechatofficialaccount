@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: insurancewechatofficalaccount-wechat
+
+server:
+  port: 8001
+  servlet:
+    context-path: /insurancewechatofficalaccount/wechat
+
+yuexing:
+  wechat:
+    appId: wx5d1a3805b802505b
+    secret: a9f94234c2773ae54367e31c99631fcb
