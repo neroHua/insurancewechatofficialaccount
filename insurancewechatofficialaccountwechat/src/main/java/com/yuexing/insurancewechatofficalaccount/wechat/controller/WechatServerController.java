@@ -64,7 +64,7 @@ public class WechatServerController {
 
         if (WechatMsgType.EVENT.getCode().equals(msgType) && WechatEventType.SUBSCRIBE.getCode().equals(event)) {
             UserPO hasUserPO = userService.findUserByOpenId(fromUserName.toString());
-            if (null == hasUserPO && null == hasUserPO.getId()) {
+            if (null != hasUserPO) {
                 return;
             }
 

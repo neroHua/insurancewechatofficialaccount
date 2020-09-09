@@ -28,6 +28,8 @@
 		<okhttp.version>3.8.0</okhttp.version>
 		<jackson.dataformat.xml.version>2.8.9</jackson.dataformat.xml.version>
 		<lombok.version>1.18.2</lombok.version>
+<!--		<mysql.connector.version>8.0.11</mysql.connector.version>-->
+		<mysql.connector.version>5.1.47</mysql.connector.version>
 	</properties>
 
 	<dependencyManagement>
@@ -88,6 +90,11 @@
 				<groupId>com.fasterxml.jackson.dataformat</groupId>
 				<artifactId>jackson-dataformat-xml</artifactId>
                 <version>${jackson.dataformat.xml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

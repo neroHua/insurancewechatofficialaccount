@@ -16,7 +16,7 @@ public class BaseEntityPO implements Serializable {
     private static Logger logger = LoggerFactory.getLogger(BaseEntityPO.class);
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "create_by", updatable = false)

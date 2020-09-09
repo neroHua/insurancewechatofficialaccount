@@ -1,7 +1,12 @@
 spring:
   application:
     name: insurancewechatofficalaccount-wechat
-
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_insurancewechatofficalaccount?&serverTimezone=GMT&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    #password: root
+    password: mysql_123_HDY&
 server:
   port: 8001
   servlet:
